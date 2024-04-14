@@ -5,7 +5,14 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage:
+      {
+        bgOne: "url('./assets/scifi.jpg')",
+        cat:"url('./assets/cat.jpg')"
+
+      }
+    },
   },
   plugins: [],
 }

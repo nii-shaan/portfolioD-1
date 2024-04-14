@@ -20,20 +20,20 @@ function SideBar() {
   const icon = (
     <FaBars
       onClick={handleBar}
-      className="absolute left-0 h-[30px] w-[20px] ml-[10px] mt-[10px] text-red-500 cursor-pointer "
+      className="absolute left-0 h-[30px] w-[20px] ml-[10px] mt-[10px] text-fuchsia-50 cursor-pointer absolute z-10 "
     />
   );
 
   const bar = (
     <motion.div
-      className="w-[200px] h-[600px] bg-indigo-900  absolute z-1 rounded-lg"
+      className="w-[200px] h-[600px] bg-indigo-900  absolute z-10 rounded-lg"
       initial={{ x: -200 }}
       animate={{ x: 0 }}
       transition={{ delay: 0.1 }}
     >
       <FaCircleArrowLeft
         onClick={handleBar}
-        className="absolute left-0 h-[32px] w-[22px] ml-[10px] mt-[10px] text-red-500 cursor-pointer  "
+        className="absolute left-0 h-[32px] w-[22px] ml-[10px] mt-[10px] text-fuchsia-50 cursor-pointer  "
       />
 
       <ul className=" text-white w-full h-[300px] mt-[80px]  flex flex-col justify-evenly items-center">
@@ -41,7 +41,7 @@ function SideBar() {
           <li key={item.id} className="cursor-pointer">
             <NavLink
               className={({ isActive }) =>
-                isActive ? "text-red-500" : "text-white"
+                isActive ? "text-red-500 text-[20px]" : "text-white"
               }
               to={item.path}
             >

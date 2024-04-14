@@ -2,7 +2,16 @@ import React from 'react'
 
 function Contact() {
   return (
-    <div className='bg-slate-800 h-[800px] w-full '>Contact</div>
+    <div className='bg-bgOne h-[700px] w-full flex items-center  justify-center  '>
+
+    <div className='h-full w-full  backdrop-blur-[15px]'>
+
+
+
+
+      
+    </div>
+    </div>
   )
 }
 
