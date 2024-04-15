@@ -4,6 +4,7 @@ function Footer() {
   const [date, setDate] = useState(new Date());
 
   let time = date.toLocaleTimeString();
+  console.log(time.length);
 
   const [extra, setExtra] = useState("");
 
@@ -11,12 +12,12 @@ function Footer() {
     setDate(new Date());
     if (
       (time.slice(8, 10) == "AM" && Number(time.slice(0, 1)) >= 12) ||
-      Number(time.slice(0, 1)) <= 3
+      Number(time.slice(0, 1)) <= 4
     ) {
       setExtra("Its time to sleep, Are you an OWL?");
     } else if (
-      (time.slice(9, 11) == "AM" && Number(time.slice(0, 2)) >= 5) ||
-      Number(time.slice(0, 2)) < 10
+      (time.slice(8, 10) == "AM" && Number(time.slice(0, 1)) >= 5) ||
+      Number(time.slice(0, 1)) < 9
     ) {
       setExtra("Good Morning!");
     } else if (
