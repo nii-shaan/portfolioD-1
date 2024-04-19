@@ -29,7 +29,7 @@ function Footer() {
       >
         <h1 className="text-[20px]">{time}</h1>
 
-        <p>{extra}</p>
+      
       </div>
     </footer>
   );
